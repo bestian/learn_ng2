@@ -1,14 +1,22 @@
-<app-navbar [title]='title'></app-navbar>
+<app-navbar [section]="section" (notify)="onNotify($event)"></app-navbar>
 <div class="main">
-
-	<h1>旅行過來</h1>
-
-	<i class="quote" [innerHTML]="quote[0]"></i>
-	
-	<h1 class = "ui header">概念
-		<div class="sub header">Concepts</div>
-	</h1>
-
-	<app-concepts></app-concepts>
-
+	<section [hidden]="section != 'learn'">
+		<h1>旅行過來</h1>
+		<i class="quote" [innerHTML]="quote[0]"></i>
+		<h1 class = "ui header">起步
+			<div class="sub header">Getting Started</div>
+		</h1>
+		<ul>
+			<li>
+				<a href="https://github.com/angular/angular-cli" target="_blank">安裝命令列工具Angular CLI</a>
+				<i class="note">
+					(note:中間可能出現不少錯誤和警示，請詳閱並逐一排除，方能順利安裝)
+				</i>
+			</li>
+		</ul>
+		<h1 class = "ui header">概念
+			<div class="sub header">Concepts</div>
+		</h1>
+		<app-concepts></app-concepts>
+	</section>
 </div>

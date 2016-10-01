@@ -3,7 +3,7 @@
 <table class="ui celled table">
 	<thead>
 		<tr>
-			<th>概念</th><th>用途</th><th>實作</th>
+			<th>概念</th><th>簡介 + 用途</th><th>實作 + 範例</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -11,8 +11,17 @@
 			<td>{{c.zh}}
 				<br/>{{c.en}}
 			</td>
-			<td>{{c.app}}</td>
-			<td>{{c.code}}</td>
+			<td>{{c.intro}}</td>
+			<td>
+				<ul *ngIf="c.rs && c.rs[0]!=='*'">
+					<li *ngFor = "let r of c.rs">
+						<a [href]="r.href" target="_blank">{{r.t}}</a>
+					</li>					
+				</ul>
+				<p *ngIf="c.rs && c.rs[0]=='*'" class="gray">
+					這是ng2內建的
+				</p>
+			</td>
 		</tr>
 	</tbody>
 </table>

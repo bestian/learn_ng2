@@ -6,12 +6,14 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { ConceptsComponent } from './concepts/concepts.component';
+import { TestDirectiveDirective } from './test-directive.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    ConceptsComponent
+    ConceptsComponent,
+    TestDirectiveDirective
   ],
   imports: [
     BrowserModule,

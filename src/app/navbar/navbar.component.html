@@ -1,5 +1,5 @@
 <nav class="ui menu">
-  <div class = "item">@learn</div>
-  <div class = "item">@do</div>
-  <div class = "item">@rethink</div>
+  <a class = "item" [ngClass]="{active:section=='learn'}" (click)="onClick('learn')">@learn</a>
+  <a class = "item" [ngClass]="{active:section=='do'}" (click)="onClick('do')">@do</a>
+  <a class = "item" [ngClass]="{active:section=='rethink'}" (click)="onClick('rethink')">@rethink</a>
 </nav>
