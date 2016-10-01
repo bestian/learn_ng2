@@ -1,12 +1,14 @@
-<h1>
-  {{title}}
-</h1>
+<app-navbar [title]='title'></app-navbar>
+<div class="main">
 
-<p>嗨</p>
+	<h1>旅行過來</h1>
 
-<h1>從ng1旅行過來，辛苦了~~</h1>
+	<i class="quote" [innerHTML]="quote[0]"></i>
+	
+	<h1 class = "ui header">概念
+		<div class="sub header">Concepts</div>
+	</h1>
 
-<p>it's easy! isn't it!</p>
+	<app-concepts></app-concepts>
 
-<p>ng1 is a framework witch let you build app componentwise.
-<br/>ng2 itself is a composition of components.</p>
+</div>

@@ -1,13 +1,36 @@
+.main {
+	position: absolute;
+	top: 50px;
+	padding: 10px;
+}
+
 h1 {
 	color: #0c0;
-	font-size: 25px;
-	font-size: 5vm; /* ie9 */
-	font-size: 5vmin;
+	font-size: 20px;
+	font-size: 4vm; /* ie9 */
+	font-size: 4vmin;
 	font-weight: 1200;
 }
 
+.header .sub.header {
+	font-size: 0.6em;
+}
+
 p {
-	font-size: 15px;
+	font-size: 18px;
 	font-size: 3vm; /* ie9 */
 	font-size: 3vmin;
+}
+
+.quote {
+	font-size: 16px;
+	font-size: 2vm; /* ie9 */
+	font-size: 2vmin;
+	line-height: 135%;
+	text-transform: italic;
+	font-family: cursive, "Comic Sans MS", arial;
+}
+
+a, button {
+	cursor: pointer;
 }

@@ -1,0 +1,15 @@
+button {
+	min-height: 50px;
+	min-width: 100px;
+	padding: 5px;
+}
+
+table {
+	width: 100%;
+}
+
+th{
+	background-color: #090;
+	min-width: 6vm;
+	min-width: 6vmin;
+}

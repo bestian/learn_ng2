@@ -1,0 +1,18 @@
+<input type="text" name="search" class="ui input" [placeholder]="searchText">
+<i class="blue search icon"></i>
+<table class="ui celled table">
+	<thead>
+		<tr>
+			<th>概念</th><th>用途</th><th>實作</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr *ngFor = "let c of concepts">
+			<td>{{c.zh}}
+				<br/>{{c.en}}
+			</td>
+			<td>{{c.app}}</td>
+			<td>{{c.code}}</td>
+		</tr>
+	</tbody>
+</table>
