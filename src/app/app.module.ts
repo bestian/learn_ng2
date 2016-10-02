@@ -7,13 +7,17 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { ConceptsComponent } from './concepts/concepts.component';
 import { TestDirectiveDirective } from './test-directive.directive';
+import { SearchConceptByPipe } from './search-concept-by.pipe';
+import { DecorateRPipe } from './decorate-r.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     ConceptsComponent,
-    TestDirectiveDirective
+    TestDirectiveDirective,
+    SearchConceptByPipe,
+    DecorateRPipe
   ],
   imports: [
     BrowserModule,

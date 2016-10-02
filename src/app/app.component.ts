@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
-import {NavbarComponent} from './navbar/navbar.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
-  directives: [NavbarComponent]
+//  directives: [NavbarComponent]
 })
 export class AppComponent {
 	public section:string = 'learn';
@@ -15,7 +15,6 @@ export class AppComponent {
 			<br/>&nbsp;and in the darkness bind them."  -- &lt;Lord of the Rings&gt;`
 	]
 	onNotify(message:string):void {
-		alert(message);
 	    this.section = message;
 	}
 }

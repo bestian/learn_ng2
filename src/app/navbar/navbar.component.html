@@ -1,5 +1,3 @@
 <nav class="ui menu">
-  <a class = "item" [ngClass]="{active:section=='learn'}" (click)="onClick('learn')">@learn</a>
-  <a class = "item" [ngClass]="{active:section=='do'}" (click)="onClick('do')">@do</a>
-  <a class = "item" [ngClass]="{active:section=='rethink'}" (click)="onClick('rethink')">@rethink</a>
+  <a *ngFor="let n of navs" class = "item" [ngClass]="{active:section == n}" (click)="onClick(n)">@{{n}}</a>
 </nav>

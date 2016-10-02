@@ -7,7 +7,10 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {  
   @Input() section = '';
-  @Output() notify: EventEmitter<string> = new EventEmitter<string>();
+  @Output() notify = new EventEmitter<string>();
+
+  navs = ['learn','do','rethink','dig']
+  special_topics = ['routing','http','animation'];
 
   onClick(m) {
     this.notify.emit(m);

@@ -1,5 +1,6 @@
-<input type="text" name="search" class="ui input" [placeholder]="searchText">
+<input type="text" name="search" class="ui input" [placeholder]="searchText" [(ngModel)]="mySearch">
 <i class="blue search icon"></i>
+
 <table class="ui celled table">
 	<thead>
 		<tr>
@@ -7,15 +8,15 @@
 		</tr>
 	</thead>
 	<tbody>
-		<tr *ngFor = "let c of concepts">
+		<tr *ngFor = "let c of concepts | searchConceptBy: mySearch">
 			<td>{{c.zh}}
 				<br/>{{c.en}}
 			</td>
-			<td>{{c.intro}}</td>
+			<td [innerText] = "c.txt | decorateR"></td>
 			<td>
 				<ul *ngIf="c.rs && c.rs[0]!=='*'">
 					<li *ngFor = "let r of c.rs">
-						<a [href]="r.href" target="_blank">{{r.t}}</a>
+						<a [href]="r.h" target="_blank">{{r.t | decorateR}}</a>
 					</li>					
 				</ul>
 				<p *ngIf="c.rs && c.rs[0]=='*'" class="gray">
