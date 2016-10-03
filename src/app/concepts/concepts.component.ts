@@ -18,9 +18,19 @@ export class ConceptsComponent implements OnInit {
     t:'Doc', h:'https://angular.io/docs/ts/latest/guide/dependency-injection.html'
   }]},
 
-  {t:'指示物/Directive'},
-  {t:'屬性指示物/Attribute Directive'},
-  {t:'結構指示物/Structure Directive'},
+  {t:'指示物/Directives',
+      txt:`由html標記或屬性啟動的angular功能`},
+  {t:'屬性指示物/Attribute Directives',
+      txt:`由屬性啟動，改變DOM元素的外觀或行為`, 
+      rs: [{t:'Doc', h:'https://angular.io/docs/ts/latest/guide/attribute-directives.html'}
+      ]
+  },
+  {t:'結構指示物/Structural Directives',
+      txt:`由屬性啟動，會增加或移除DOM元素，由星號起頭，如*ngIf, *ngFor`,
+      rs: [{
+        t:'Doc', h:'https://angular.io/docs/ts/latest/guide/structural-directives.html'
+      }]
+  },
 
   {t:'水管算符/Pipe', rs:[{
     t:'Doc', h:'https://angular.io/docs/ts/latest/guide/pipes.html'
