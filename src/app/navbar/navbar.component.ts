@@ -10,7 +10,7 @@ export class NavbarComponent implements OnInit {
   @Output() notify = new EventEmitter<string>();
 
   navs = ['learn','do','rethink','dig']
-  special_topics = ['routing','http','animation'];
+  topics = ['performace','routing','http','animation','cross-browser','cross-platform'];
 
   onClick(m) {
     this.notify.emit(m);

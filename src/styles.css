@@ -7,3 +7,21 @@ a, button {
 [hidden] {
 	display: none !important;
 }
+
+@media screen and (max-width: 600px) {
+	.fat-only {
+		display: none !important;
+	}
+}
+
+@media screen and (min-width: 600px) {
+	.thin-only {
+		display: none !important;
+	}
+}
+
+@media print {
+	.thin-only {
+		display: none !important;
+	}
+}
