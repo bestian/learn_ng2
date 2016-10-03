@@ -9,6 +9,7 @@ import { ConceptsComponent } from './concepts/concepts.component';
 import { TestDirectiveDirective } from './test-directive.directive';
 import { SearchConceptByPipe } from './search-concept-by.pipe';
 import { DecorateRPipe } from './decorate-r.pipe';
+import { SlashPipe } from './slash.pipe';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { DecorateRPipe } from './decorate-r.pipe';
     ConceptsComponent,
     TestDirectiveDirective,
     SearchConceptByPipe,
-    DecorateRPipe
+    DecorateRPipe,
+    SlashPipe
   ],
   imports: [
     BrowserModule,

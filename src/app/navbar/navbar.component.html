@@ -3,15 +3,22 @@
     Basic
     <i class="dropdown icon"></i>
     <div class="menu">
-      <a *ngFor="let n of navs" class="item" [ngClass]="{active:section == n}">@{{n}}</a>
+      <a *ngFor="let n of navs" class="item" [ngClass]="{active:section == n}" (click)="onClick(n)">@{{n}}</a>
     </div>
   </div>
   <a *ngFor="let n of navs" class = "fat-only item" [ngClass]="{active:section == n}" (click)="onClick(n)">@{{n}}</a>
   <div class="ui simple dropdown item">
-    More
+    Topics
     <i class="dropdown icon"></i>
     <div class="menu">
-      <a *ngFor="let t of topics" class="item" [ngClass]="{active:section == t}">#{{t}}</a>
+      <a *ngFor="let t of topics" class="item" [ngClass]="{active:section == t}" (click)="onClick(t)">#{{t}}</a>
+    </div>
+  </div>
+  <div class="ui simple dropdown item">
+    Social
+    <i class="dropdown icon"></i>
+    <div class="menu">
+      <a *ngFor="let s of socials" class="item" [ngClass]="{active:section == s}" (click)="onClick(s)">#{{s}}</a>
     </div>
   </div>
 </nav>

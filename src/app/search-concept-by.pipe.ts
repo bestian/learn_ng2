@@ -7,7 +7,7 @@ export class SearchConceptByPipe implements PipeTransform {
 
   transform(cs: Array<any>, key: string): Array<any> {
     return cs.filter((o) => {
-    	return (o.zh+o.en).indexOf(key) > -1;
+    	return (o.t).indexOf(key) > -1;
     })
   }
 

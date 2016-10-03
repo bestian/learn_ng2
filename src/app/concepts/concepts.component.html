@@ -9,8 +9,8 @@
 	</thead>
 	<tbody>
 		<tr *ngFor = "let c of concepts | searchConceptBy: mySearch">
-			<td>{{c.zh}}
-				<br/>{{c.en}}
+			<td>{{c.t | slash:0}}
+				<br/>{{c.t | slash:1}}
 			</td>
 			<td [innerText] = "c.txt | decorateR"></td>
 			<td>
